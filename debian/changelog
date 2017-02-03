@@ -1,0 +1,5 @@
+wazo-python-flask-session-packaging (0.3.0-1~wazo1) wazo-dev; urgency=medium
+
+  *  First commit
+
+ -- Wazo Maintainers <dev.wazo@gmail.com>  Wed, 01 Feb 2017 08:58:31 -0500

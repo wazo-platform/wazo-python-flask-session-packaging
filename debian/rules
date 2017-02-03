@@ -1,0 +1,23 @@
+#!/usr/bin/make -f
+
+# Uncomment this to turn on verbose mode.
+# export DH_VERBOSE=1
+
+PKG = $(word 2,$(shell dpkg-parsechangelog | grep Source))
+VERSION ?= $(shell cat VERSION)
+DOWNLOAD_URL = "https://github.com/fengsp/flask-session/archive/${VERSION}.tar.gz"
+
+%:
+	dh $@ --buildsystem=python_distutils --with python2
+
+clean:
+	@echo
+
+override_dh_auto_test:
+	@echo
+
+.PHONY: get-orig-source
+
+get-orig-source:
+	@echo "# Downloading..."
+	wget -nv -T10 -t3 $(DOWNLOAD_URL) -O ../$(PKG)_$(VERSION).orig.tar.gz
