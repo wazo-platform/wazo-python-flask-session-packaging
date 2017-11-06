@@ -7,8 +7,12 @@ PKG = $(word 2,$(shell dpkg-parsechangelog | grep Source))
 VERSION ?= $(shell cat VERSION)
 DOWNLOAD_URL = "https://github.com/fengsp/flask-session/archive/${VERSION}.tar.gz"
 
+export PYBUILD_NAME=flask-session
+export PYBUILD_DISABLE=test
+export PYBUILD_SYSTEM=distutils
+
 %:
-	dh $@ --buildsystem=python_distutils --with python2
+	dh $@ --with python3,python2 --buildsystem=pybuild
 
 clean:
 	@echo
