@@ -3,6 +3,13 @@
 This repository contains the packaging information for
 [python-flask-session](https://github.com/fengsp/flask-session).
 
+## Reason
+
+* Not packaged by Debian Buster
+* Needed by wazo-ui
+
+## Upgrade
+
 To get a new version of python-flask-session in the Wazo repository, set the
 desired version in the `VERSION` file and increment the changelog.
 
