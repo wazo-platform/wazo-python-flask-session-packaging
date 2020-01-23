@@ -1,6 +1,6 @@
 Source: wazo-python-flask-session-packaging
 Section: python
-Priority: extra
+Priority: optional
 Maintainer: Wazo Maintainers <dev.wazo@gmail.com>
 Build-Depends: debhelper (>= 9), dh-python, python-all (>= 2.7), python-setuptools, wget, python3-all, python3-setuptools
 Standards-Version: 3.9.4
@@ -12,9 +12,13 @@ Architecture: all
 Depends: ${shlibs:Depends}, ${python:Depends}, ${misc:Depends}
 Description: Python library for flask
  .
+ Flask-Session is an extension for Flask that adds support for
+ Server-side Session to your application.
 
 Package: python3-flask-session
 Architecture: all
 Depends: ${shlibs:Depends}, ${python3:Depends}, ${misc:Depends}
 Description: Python library for flask
  .
+ Flask-Session is an extension for Flask that adds support for
+ Server-side Session to your application.
