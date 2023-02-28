@@ -14,12 +14,6 @@ export PYBUILD_SYSTEM=distutils
 %:
 	dh $@ --with python3 --buildsystem=pybuild
 
-clean:
-	@echo
-
-override_dh_auto_test:
-	@echo
-
 .PHONY: get-orig-source
 
 get-orig-source:
