@@ -12,13 +12,7 @@ export PYBUILD_DISABLE=test
 export PYBUILD_SYSTEM=distutils
 
 %:
-	dh $@ --with python3,python2 --buildsystem=pybuild
-
-clean:
-	@echo
-
-override_dh_auto_test:
-	@echo
+	dh $@ --with python3 --buildsystem=pybuild
 
 .PHONY: get-orig-source
 
