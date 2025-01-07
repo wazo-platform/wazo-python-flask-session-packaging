@@ -1,3 +1,9 @@
+wazo-python-flask-session-packaging (0.4.1-1~wazo1) wazo-dev-bullseye; urgency=medium
+
+  * Bump version to 0.4.1
+
+ -- Wazo Maintainers <dev+pkg@wazo.community>  Tue, 07 Jan 2025 08:34:30 -0500
+
 wazo-python-flask-session-packaging (0.3.1-1~wazo8) wazo-dev-bullseye; urgency=medium
 
   * follow debian copyright guidelines
