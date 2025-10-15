@@ -1,3 +1,9 @@
+wazo-python-flask-session-packaging (0.4.1-1~wazo3) wazo-dev-bookworm; urgency=medium
+
+  * Rebuild for Bookworm
+
+ -- Wazo Maintainers <dev+pkg@wazo.community>  Wed, 10 Sep 2025 14:36:18 -0400
+
 wazo-python-flask-session-packaging (0.4.1-1~wazo1) wazo-dev-bullseye; urgency=medium
 
   * Bump version to 0.4.1
